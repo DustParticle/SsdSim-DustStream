@@ -42,10 +42,10 @@ jobs:
     matrix:
       x64_Release:
         ArtifactName: 'x64Release'
-        TestExe: $(System.DefaultWorkingDirectory)'/Test.exe'
+        TestExe: $(ArtifactName)'/Test.exe'
       x64_Debug:
         ArtifactName: 'x64Debug'
-        TestExe: $(System.DefaultWorkingDirectory)'/Test.exe'
+        TestExe: $(ArtifactName)'/Test.exe'
   steps:
   - task: DownloadBuildArtifacts@0
     inputs:

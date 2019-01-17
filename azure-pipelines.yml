@@ -1,4 +1,4 @@
-
+name: 'BuildName_'$(Date:yyyyMMdd)$(Rev:.r)
 jobs:
 - job: Build
   strategy:

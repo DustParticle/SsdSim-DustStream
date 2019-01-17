@@ -49,6 +49,11 @@ jobs:
   steps:
   - task: DownloadPipelineArtifact@0
     inputs:
+      buildType: 'specific'
+      project: 'SsdSim-' #hardcode
+      pipeline: 'SsdSim--I' #hardcode
+      buildVersionToDownload: 'specific'
+      buildId: $(Build.BuildId) #that BuildId, need to take this as a variable
       artifactName: $(ArtifactName)
       targetPath: $(System.DefaultWorkingDirectory)
   - powershell: $(TestExe)

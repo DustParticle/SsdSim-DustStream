@@ -28,10 +28,10 @@ jobs:
     inputs:
       configuration: $(BuildConfiguration)
       platform: $(BuildPlatform)
-  - task: PublishPipelineArtifact@0
+  - task: PublishBuildArtifacts@1
     inputs:
       artifactName: $(ArtifactName)
-      targetPath: $(ArtifactPath)
+      pathtoPublish: $(ArtifactPath)
 
 - job: Test
   dependsOn: 

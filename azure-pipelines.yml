@@ -17,6 +17,7 @@ jobs:
         ArtifactPath: './SsdSim/x64/Debug/'
         ArtifactName: 'x64Debug'
   steps:
+  - script: echo $(BuildID)
   - script: git clone https://github.com/DustParticle/SsdSim.git
   - task: NuGetCommand@2
     inputs:

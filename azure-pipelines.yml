@@ -58,4 +58,4 @@ jobs:
       artifactName: $(ArtifactName)
       downloadPath: $(System.DefaultWorkingDirectory)
   - powershell: ./Test.exe
-    workingDirectory: $(System.DefaultWorkingDirectory)'/'$(ArtifactName)
+    workingDirectory: $(System.DefaultWorkingDirectory)/$(ArtifactName)

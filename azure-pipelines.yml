@@ -57,5 +57,6 @@ jobs:
       buildId: $(Build.BuildId) #that BuildId, need to take this as a variable
       artifactName: $(ArtifactName)
       downloadPath: $(System.DefaultWorkingDirectory)
-  - powershell: $(TestExe)
+  - script: cd $(ArtifactName)
+  - script: Test.exe
   

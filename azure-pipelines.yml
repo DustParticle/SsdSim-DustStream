@@ -20,7 +20,8 @@ jobs:
   - script: echo 'Build.BuildId' $(Build.BuildId)
   - script: echo 'Build.BuildNumber' $(Build.BuildNumber)
 #  - script: git clone https://github.com/DustParticle/SsdSim.git
-  - script: git clone https://github.com/wolfwarriorvn/SsdSim.git
+#  - script: git clone https://github.com/wolfwarriorvn/SsdSim.git
+  - script: git https://github.com/phandinhlan/SsdSim.git
   - task: NuGetCommand@2
     inputs:
       command: 'restore'

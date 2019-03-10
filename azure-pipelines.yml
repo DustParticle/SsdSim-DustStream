@@ -21,7 +21,7 @@ jobs:
   - script: echo 'Build.BuildNumber' $(Build.BuildNumber)
 #  - script: git clone https://github.com/DustParticle/SsdSim.git
 #  - script: git clone https://github.com/wolfwarriorvn/SsdSim.git
-  - script: git https://github.com/phandinhlan/SsdSim.git
+  - script: git clone https://github.com/phandinhlan/SsdSim.git
   - task: NuGetCommand@2
     inputs:
       command: 'restore'
